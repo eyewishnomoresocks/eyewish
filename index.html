@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EyeWish — no more socks!</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, sans-serif; background: #1A1A2E; color: #fff; }
+    .header { background: #16213E; padding: 24px; text-align: center; border-bottom: 2px solid #E94560; }
+    .header h1 { color: #E94560; font-size: 32px; }
+    .header p { color: #888; margin-top: 8px; font-style: italic; }
+    .nav { display: flex; justify-content: center; gap: 16px; padding: 16px; flex-wrap: wrap; }
+    .nav a { color: #E94560; text-decoration: none; padding: 8px 16px; border: 1px solid #E94560; border-radius: 20px; font-size: 14px; }
+    .nav a:hover { background: #E94560; color: white; }
+    .lang-switch { text-align: center; padding: 8px; }
+    .lang-switch button { background: none; border: 1px solid #888; color: #888; padding: 4px 12px; border-radius: 12px; cursor: pointer; margin: 4px; }
+    .lang-switch button.active { border-color: #E94560; color: #E94560; }
+    .content { max-width: 800px; margin: 0 auto; padding: 24px; }
+    .section { background: #16213E; border-radius: 16px; padding: 24px; margin-bottom: 24px; }
+    h2 { color: #E94560; font-size: 22px; margin-bottom: 16px; }
+    h3 { color: #fff; font-size: 16px; margin: 16px 0 8px; }
+    p { color: #aaa; line-height: 1.7; margin-bottom: 12px; }
+    ul { color: #aaa; line-height: 1.7; padding-left: 20px; margin-bottom: 12px; }
+    a { color: #E94560; }
+    .footer { text-align: center; padding: 24px; color: #555; font-size: 13px; }
+    .de { display: block; }
+    .en { display: none; }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🎁 EyeWish</h1>
+  <p>no more socks!</p>
+</div>
+
+<div class="lang-switch">
+  <button class="active" onclick="setLang('de')">🇩🇪 Deutsch</button>
+  <button onclick="setLang('en')">🇬🇧 English</button>
+</div>
+
+<div class="nav">
+  <a href="#privacy">Datenschutz / Privacy</a>
+  <a href="#terms">Nutzungsbedingungen / Terms</a>
+  <a href="#impressum">Impressum / Legal</a>
+</div>
+
+<div class="content">
+
+  <!-- DATENSCHUTZ DEUTSCH -->
+  <div class="section de" id="privacy">
+    <h2>🔒 Datenschutzerklärung</h2>
+    <p><em>Letzte Aktualisierung: Mai 2026</em></p>
+
+    <h3>Verantwortlicher</h3>
+    <p>Sören Kaiser<br>E-Mail: <a href="mailto:eyewishmail@gmail.com">eyewishmail@gmail.com</a><br>Land: Schweiz</p>
+
+    <h3>Welche Daten wir sammeln</h3>
+    <ul>
+      <li>E-Mail-Adresse — für Registrierung und Anmeldung</li>
+      <li>Name und Benutzername — für dein Profil</li>
+      <li>Wünsche und Links — die du selbst einträgst</li>
+      <li>Freundeslisten — wen du als Freund hinzufügst</li>
+      <li>Ereignisse — Geburtstage und andere Daten</li>
+      <li>Fotos — die du in der Hall of Shame hochlädst</li>
+    </ul>
+
+    <h3>Wie wir deine Daten verwenden</h3>
+    <p>Wir verwenden deine Daten ausschliesslich um dir den EyeWish Dienst bereitzustellen, dein Konto zu verwalten und dir zu ermöglichen Wünsche mit Freunden zu teilen.</p>
+
+    <h3>Affiliate Links</h3>
+    <p>EyeWish verwendet Affiliate-Links. Wenn du auf einen Link zu einem Partnergeschäft tippst (z.B. Amazon, Digitec, Zalando), wird dein Klick dem EyeWish Affiliate-Konto zugeordnet. Du zahlst dabei keinen Cent mehr — der Shop zahlt uns eine kleine Provision.</p>
+    <p>Aktuelle Partner: Amazon.de / Amazon.ch, Digitec / Galaxus, Zalando, MediaMarkt und weitere.</p>
+
+    <h3>Dienstleister</h3>
+    <ul>
+      <li>Google Firebase — Datenbank, Authentifizierung, Speicher (Google LLC, USA)</li>
+      <li>Google Analytics — anonyme Nutzungsstatistiken</li>
+    </ul>
+
+    <h3>Deine Rechte</h3>
+    <p>Du hast jederzeit das Recht deine Daten einzusehen, zu berichtigen, zu löschen oder der Verarbeitung zu widersprechen. Kontakt: <a href="mailto:eyewishmail@gmail.com">eyewishmail@gmail.com</a></p>
+
+    <h3>Mindestalter</h3>
+    <p>EyeWish ist für Nutzer ab 13 Jahren. Unter 13-Jährige dürfen die App nicht verwenden.</p>
+  </div>
+
+  <!-- PRIVACY ENGLISH -->
+  <div class="section en" id="privacy-en">
+    <h2>🔒 Privacy Policy</h2>
+    <p><em>Last updated: May 2026</em></p>
+
+    <h3>Controller</h3>
+    <p>Sören Kaiser<br>Email: <a href="mailto:eyewishmail@gmail.com">eyewishmail@gmail.com</a><br>Country: Switzerland</p>
+
+    <h3>What data we collect</h3>
+    <ul>
+      <li>Email address — for registration and login</li>
+      <li>Name and username — for your profile</li>
+      <li>Wishes and links — that you enter yourself</li>
+      <li>Friend lists — who you add as a friend</li>
+      <li>Events — birthdays and other dates</li>
+      <li>Photos — that you upload in the Hall of Shame</li>
+    </ul>
+
+    <h3>How we use your data</h3>
+    <p>We use your data solely to provide you with the EyeWish service, manage your account and enable you to share wishes with friends.</p>
+
+    <h3>Affiliate Links</h3>
+    <p>EyeWish uses affiliate links. When you tap a link to a partner store (e.g. Amazon, Digitec, Zalando), your click is attributed to the EyeWish affiliate account. You pay no extra — the store pays us a small commission.</p>
+
+    <h3>Service Providers</h3>
+    <ul>
+      <li>Google Firebase — database, authentication, storage (Google LLC, USA)</li>
+      <li>Google Analytics — anonymous usage statistics</li>
+    </ul>
+
+    <h3>Your Rights</h3>
+    <p>You have the right at any time to access, correct, delete your data or object to processing. Contact: <a href="mailto:eyewishmail@gmail.com">eyewishmail@gmail.com</a></p>
+
+    <h3>Minimum Age</h3>
+    <p>EyeWish is for users aged 13 and over. Users under 13 may not use the app.</p>
+  </div>
+
+  <!-- NUTZUNGSBEDINGUNGEN DEUTSCH -->
+  <div class="section de" id="terms">
+    <h2>📋 Nutzungsbedingungen</h2>
+    <p><em>Letzte Aktualisierung: Mai 2026</em></p>
+
+    <h3>1. Mindestalter</h3>
+    <p>Du musst mindestens 13 Jahre alt sein um EyeWish zu nutzen.</p>
+
+    <h3>2. Erlaubte Nutzung</h3>
+    <p>EyeWish darf nur für private, nicht-kommerzielle Zwecke genutzt werden. Verboten sind Spam, falsche Identitäten, illegale Inhalte und die Verletzung von Rechten Dritter.</p>
+
+    <h3>3. Hall of Shame</h3>
+    <p>Du bist selbst verantwortlich für die Inhalte die du hochlädst. Keine Fotos von Personen ohne deren Einverständnis. Keine beleidigenden oder diskriminierenden Inhalte.</p>
+
+    <h3>4. Affiliate Links</h3>
+    <p>EyeWish verdient eine kleine Provision wenn du über unsere Links einkaufst. Dies hat keinen Einfluss auf den Preis den du zahlst.</p>
+
+    <h3>5. Haftungsausschluss</h3>
+    <p>EyeWish wird ohne Gewähr bereitgestellt. Wir haften nicht für Datenverlust, Ausfälle oder Schäden durch Dritte.</p>
+
+    <h3>6. Anwendbares Recht</h3>
+    <p>Es gilt Schweizer Recht. Gerichtsstand ist die Schweiz.</p>
+
+    <h3>Kontakt</h3>
+    <p><a href="mailto:eyewishmail@gmail.com">eyewishmail@gmail.com</a></p>
+  </div>
+
+  <!-- TERMS ENGLISH -->
+  <div class="section en" id="terms-en">
+    <h2>📋 Terms of Use</h2>
+    <p><em>Last updated: May 2026</em></p>
+
+    <h3>1. Minimum Age</h3>
+    <p>You must be at least 13 years old to use EyeWish.</p>
+
+    <h3>2. Permitted Use</h3>
+    <p>EyeWish may only be used for private, non-commercial purposes. Prohibited: spam, false identities, illegal content and violation of third party rights.</p>
+
+    <h3>3. Hall of Shame</h3>
+    <p>You are responsible for the content you upload. No photos of people without their consent. No offensive or discriminatory content.</p>
+
+    <h3>4. Affiliate Links</h3>
+    <p>EyeWish earns a small commission when you shop through our links. This does not affect the price you pay.</p>
+
+    <h3>5. Disclaimer</h3>
+    <p>EyeWish is provided without warranty. We are not liable for data loss, service outages or damage caused by third parties.</p>
+
+    <h3>6. Applicable Law</h3>
+    <p>Swiss law applies. Jurisdiction is Switzerland.</p>
+
+    <h3>Contact</h3>
+    <p><a href="mailto:eyewishmail@gmail.com">eyewishmail@gmail.com</a></p>
+  </div>
+
+  <!-- IMPRESSUM -->
+  <div class="section" id="impressum">
+    <h2>📄 Impressum / Legal Notice</h2>
+    <p>EyeWish App<br>
+    Betreiber / Operator: Sören Kaiser<br>
+    Land / Country: Schweiz / Switzerland<br>
+    E-Mail: <a href="mailto:eyewishmail@gmail.com">eyewishmail@gmail.com</a></p>
+  </div>
+
+</div>
+
+<div class="footer">
+  <p>© 2026 EyeWish — no more socks! 🧦</p>
+</div>
+
+<script>
+  function setLang(lang) {
+    document.querySelectorAll('.de').forEach(el => el.style.display = lang === 'de' ? 'block' : 'none');
+    document.querySelectorAll('.en').forEach(el => el.style.display = lang === 'en' ? 'block' : 'none');
+    document.querySelectorAll('.lang-switch button').forEach(btn => btn.classList.remove('active'));
+    document.querySelector(`.lang-switch button[onclick="setLang('${lang}')"]`).classList.add('active');
+  }
+</script>
+
+</body>
+</html>
